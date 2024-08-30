@@ -1,0 +1,477 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap")
+	;
+
+* {
+	font-family: "Bruno Ace SC", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+img.rareFootLogo {
+	height: 80px;
+	position: relative;
+	bottom: 20px;
+}
+
+img.rareProfilePic {
+	height: 50px;
+	border-radius: 50%;
+	border: grey solid 3px;
+	width: 50px;
+	position: relative;
+	bottom: 5px;
+	right: 10px;
+}
+
+a.rareNavLinks {
+	text-decoration: none;
+	color: white;
+}
+
+div.navImages {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+}
+
+nav.rareNavBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	border-radius: 10px;
+	height: 41px;
+	margin: 15px;
+}
+
+ul.rareSideBar {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.478);
+	backdrop-filter: blur(10px);
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 300px;
+	z-index: 999;
+	display: none;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+}
+
+svg.closeSVG {
+	margin: 20px 0;
+}
+
+svg.menuButton {
+	display: none;
+}
+
+ul.rareSideBar img.rareFootLogo {
+	height: 80px;
+	position: relative;
+	right: 20px;
+}
+
+ul.rareSideBar li {
+	width: 100%;
+}
+
+ul.rareSideBar a {
+	width: 100%;
+	color: white;
+	text-decoration: none;
+}
+
+li.menuButton {
+	display: none;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 7px;
+}
+
+li {
+	margin-right: 20px;
+	list-style: none;
+	color: white;
+	font-weight: 600;
+	font-family: Amaranth, sans-serif;
+}
+
+/* ------------------------------------------corousel---------------------------------- */
+div#carouselExampleAutoplaying {
+	height: auto;
+	margin: 15px;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+div.carousel-inner {
+	height: 100%;
+}
+
+img.curouselImg {
+	/* height: 690px;
+  border-radius: 10px; */
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+/* --------------------------------------------------------footer----------------------------------------- */
+div.rareFooterContainer {
+	background-color: black;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+img.rareLogoFooter {
+	width: 25vw;
+}
+
+div.aboutUsContainer, div.checkThisContainer, div.contactUsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p.aboutUs, p.checkThis, p.contactUs {
+	color: white;
+	font-size: 24px;
+}
+
+a.ourStoryAnchor, a.checkThisAnchor {
+	text-decoration: none;
+}
+
+p.ourstory, p.checkThisPara {
+	color: white;
+}
+
+div.footSubContainer {
+	display: flex;
+	width: 45vw;
+	justify-content: space-around;
+}
+
+img.socialLogoImg {
+	width: 45px;
+	margin-right: 8px;
+}
+
+/* ----------------------------------------------Brands and Products ------------------------------------ */
+div.brandsAndProductsContainer {
+	height: fit-content;
+	border: solid black 2px;
+	margin: 15px;
+	border-radius: 10px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ---------------------------brands--------------------------- */
+h4.brandHead {
+	text-align: center;
+	font-size: inherit;
+	font-weight: 800;
+}
+
+div.brandsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: solid black 2px;
+	padding: 15px;
+	background-color: white;
+	width: auto;
+	height: auto;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+
+div.oneBrandContainer {
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+}
+
+input.brandCheckBox {
+	margin-right: 8px;
+}
+
+/* ---------------------------Products--------------------------- */
+div.productsMainContainer {
+	border: solid black 3px;
+	border-radius: 10px;
+	width: auto;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+img.brandImages {
+	width: 130px;
+}
+
+div.productContainer {
+	margin: 15px;
+	background-color: black;
+	width: 17vw;
+	padding: 10px;
+	border-radius: 14px;
+}
+
+img.productImg {
+	width: 100%;
+	max-width: 317px;
+	margin-bottom: 10px;
+	border-radius: 12px;
+}
+
+a.productAnchor {
+	text-decoration: none;
+}
+
+div.productRatingContainer {
+	display: flex;
+}
+
+div.productPriceContainer {
+	display: flex;
+}
+
+p.productName {
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+	margin: 3px;
+}
+
+p.productRating {
+	color: white;
+	margin: 0 3px 0 3px;
+	font-size: 13px;
+	margin-right: 10px;
+}
+
+p.productPrice {
+	color: white;
+	margin: 0 7px 0 3px;
+	font-size: 13px;
+}
+
+p.actualPrice {
+	color: white;
+	font-size: 13px;
+}
+
+span.fa {
+	color: white;
+}
+
+span.checked {
+	color: orange;
+}
+
+div.fullProductContainer {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 111vh;
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ---------------------------------------------------media query----------------------------------- */
+@media ( max-width : 560px) {
+	div.fullProductContainer {
+		height: inherit;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		flex-wrap: nowrap;
+	}
+	
+	div.starRatingContainer{
+	position: relative;
+    bottom: 9px;
+	}
+	
+	span.fa{
+	font-size: 8px;
+	}
+	h4.brandHead {
+		font-size: 15px;
+	}
+	label {
+		font-size: 12px;
+	}
+	div.brandsContainer {
+		margin: 0;
+		height: auto;
+		width: auto;
+	}
+	div.brandsAndProductsContainer {
+		flex-direction: column;
+	}
+	div.productsMainContainer {
+		width: auto;
+	}
+	img.brandImages {
+		width: 50px;
+	}
+	div.productContainer {
+		width: 127px;
+        margin: 3px;
+	}
+	p.productName {
+		font-size: 8px;
+	}
+	p.productRating {
+		font-size: 8px;
+		margin-bottom: 3px;
+	}
+	p.productPrice, p.actualPrice {
+		font-size: 6px;
+	}
+	li.onMobileScreen {
+		display: none;
+	}
+	svg.menuButton {
+		display: block;
+		margin: 7px 24px;
+	}
+	img.rareFootLogo {
+		height: 60px;
+		bottom: 10px;
+	}
+	ul.rareSideBar {
+		width: 100%;
+	}
+	img.rareProfilePic {
+		display: none;
+	}
+	p.checkThis, p.aboutUs, p.contactUs {
+		color: white;
+		font-size: 7px;
+		margin-bottom: 7px;
+	}
+	img.socialLogoImg {
+		width: 15px;
+		margin-right: 4px;
+	}
+	p.ourstory, p.checkThisPara {
+		font-size: 6px;
+		margin-bottom: 2px;
+	}
+	div.rareFooterContainer {
+		height: auto;
+		padding: 3px;
+	}
+	div.onebrand{
+	display: flex;
+	margin-bottom: 2px;
+	}
+}
+
+@media screen and (min-width: 560px) and (max-width: 768px) {
+	div.brandsAndProductsContainer {
+		display: flex;
+		flex-direction: column;
+	}
+	div.brandsContainer {
+		margin: 0;
+		height: auto;
+		width: auto;
+	}
+	div.productsMainContainer {
+		width: auto;
+		height: auto;
+	}
+	div.productContainer {
+		width: 23vw;
+	}
+	p.productName {
+		font-size: 12px;
+	}
+	p.productRating {
+		font-size: 8px;
+		margin-bottom: 4px;
+	}
+	p.productPrice, p.actualPrice {
+		font-size: 9px;
+	}
+	li.onMobileScreen {
+		display: none;
+	}
+	svg.menuButton {
+		display: block;
+		margin: 7px 24px;
+	}
+	img.rareFootLogo {
+		height: 60px;
+		bottom: 10px;
+	}
+	img.rareProfilePic {
+		/* height: 40px;
+    width: 40px;
+    right: 5px;
+    bottom: 3px; */
+		display: none;
+	}
+	p.aboutUs, p.checkThis, p.contactUs {
+		color: white;
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	img.socialLogoImg {
+		width: 25px;
+		margin-right: 6px;
+	}
+	p.ourstory, p.checkThisPara {
+		font-size: 9px;
+		margin-bottom: 7px;
+	}
+	div.rareFooterContainer {
+		height: 23vh;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+	p.aboutUs, p.checkThis, p.contactUs {
+		color: white;
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	img.socialLogoImg {
+		width: 25px;
+		margin-right: 6px;
+	}
+	p.ourstory, p.checkThisPara {
+		font-size: 9px;
+		margin-bottom: 7px;
+	}
+	div.rareFooterContainer {
+		height: 23vh;
+	}
+}

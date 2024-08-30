@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+div.subContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid #5f6368 5px;
+  width: 17vw;
+  margin: 5px;
+}
+
+div.subContainer:hover {
+  border: solid orange 5px;
+  background-color: orange;
+}
+
+h2 {
+  color: #5f6368;
+  margin: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+div.categoryContainer {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+div.fullAdminContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.rareLogo {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  background-color: #5f6368;
+  width: 60%;
+  height: 40vh;
+}
+
+img {
+  width: 100%;
+  margin-left: auto;
+}

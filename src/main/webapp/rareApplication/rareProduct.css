@@ -1,0 +1,694 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img.rareFootLogo {
+  height: 80px;
+  position: relative;
+  bottom: 20px;
+}
+
+img.rareProfilePic {
+  height: 50px;
+  border-radius: 50%;
+  border: grey solid 3px;
+  width: 50px;
+  position: relative;
+  bottom: 5px;
+  right: 10px;
+}
+
+a.rareNavLinks {
+  text-decoration: none;
+  color: white;
+}
+
+div.navImages {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+nav.rareNavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+  height: 41px;
+  margin: 15px;
+}
+
+ul.rareSideBar {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.478);
+  backdrop-filter: blur(10px);
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+svg.closeSVG {
+  margin: 20px 0;
+}
+
+svg.menuButton {
+  display: none;
+}
+
+ul.rareSideBar img.rareFootLogo {
+  height: 80px;
+  position: relative;
+  right: 20px;
+}
+
+ul.rareSideBar li {
+  width: 100%;
+}
+
+ul.rareSideBar a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+li.menuButton {
+  display: none;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  /* top: 7px; */
+}
+
+li {
+  margin-right: 20px;
+  list-style: none;
+  color: white;
+  font-weight: 600;
+ 
+}
+
+/* ---------------------------------------------------------------------productDetails------------------------------------------------- */
+
+div.productDetailsContainer {
+  background-color: black;
+  /* height: auto; */
+  height: 550px;
+  margin: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+div.productImgContainer {
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.productDetailsSubContainer {
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  /* padding: 10px; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.productImg {
+  width: 100%;
+  border-radius: 20px;
+  margin: 63px 0;
+}
+
+div.line {
+  height: 3px;
+  background-color: black;
+  width: 70%;
+}
+
+div.specificationContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+select#rareProductSize,
+select#rareProductColor {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+select#rareProductColor {
+  width: 230px;
+}
+
+div.rareBuyNowContainer {
+  width: 73%;
+  /* height: 10vh; */
+  border: 2px solid black;
+  margin: 15px 30px 10px 30px;
+  border-radius: 10px;
+  padding: 10px 50px;
+}
+
+p.rarePrize {
+  font-size: 50px;
+  margin: 5px 0 0 5px;
+}
+
+p.rareDelivery {
+  font-size: 25px;
+  margin: 8px 0;
+}
+
+p.rareStockCount {
+  font-weight: 800;
+  font-size: 25px;
+  color: red;
+  margin: 8px 0;
+}
+
+input.btn {
+  width: 100%;
+  height: 35px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+input.rareBuyButton {
+  background-color: black;
+  color: white;
+}
+input.rareCartButton {
+  background-color: white;
+  color: black;
+}
+
+div.reviewHeadContainer {
+  border: 2px solid black;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.reviewContainer {
+  border: 2px solid black;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+div.reviewLine {
+  height: 2px;
+  width: 80%;
+  margin: 0 120px;
+  background-color: black;
+  display: none;
+}
+
+h1.reviewHead {
+  margin: 0;
+}
+
+/* ----------------------------------------------------------brands---------------------------------- */
+
+div.brandsContainer {
+  margin: 5px;
+}
+
+img.brandsImg {
+  width: 100%;
+}
+
+/* --------------------------------------------------------footer----------------------------------------- */
+
+div.rareFooterContainer {
+  background-color: black;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 22px;
+}
+
+img.rareLogoFooter {
+  width: 25vw;
+}
+
+div.aboutUsContainer,
+div.checkThisContainer,
+div.contactUsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p.aboutUs,
+p.checkThis,
+p.contactUs {
+  color: white;
+  font-size: 24px;
+}
+
+a.ourStoryAnchor,
+a.checkThisAnchor {
+  text-decoration: none;
+}
+
+p.ourstory,
+p.checkThisPara {
+  color: white;
+  margin: 5px;
+}
+
+div.footSubContainer {
+  display: flex;
+  width: 45vw;
+  justify-content: space-around;
+}
+
+img.socialLogoImg {
+  width: 45px;
+  margin-right: 8px;
+}
+
+/* -----------------------------------------------------------------media queries--------------------------------------------------------- */
+
+@media (max-width: 560px) {
+  li.onMobileScreen {
+    display: none;
+  }
+
+  svg.menuButton {
+    display: block;
+    margin: 7px 40px;
+  }
+
+  img.rareFootLogo {
+    height: 60px;
+    bottom: 10px;
+  }
+
+  ul.rareSideBar {
+    width: 100%;
+  }
+
+  img.rareProfilePic {
+    display: none;
+  }
+
+  p.productName {
+    font-size: 6px;
+  }
+  p.productRating {
+    font-size: 5px;
+    margin-right: 6px;
+  }
+
+  p.actualPrice,
+  p.productPrice {
+    font-size: 5px;
+    margin-top: -13px;
+  }
+
+  p.aboutUs,
+  p.checkThis,
+  p.contactUs {
+    color: white;
+    font-size: 10px;
+    margin-bottom: 7px;
+  }
+  img.socialLogoImg {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  p.ourstory,
+  p.checkThisPara {
+    font-size: 7px;
+    margin-bottom: 7px;
+  }
+
+  div.rareFooterContainer {
+    height: 16vh;
+  }
+
+  div.productDetailsContainer {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+  }
+
+  div.productDetailsSubContainer {
+    width: 100%;
+    height: 231px;
+  }
+
+  div.productImgContainer {
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: 36%;
+  }
+
+  img.productImg {
+    height: 100%;
+    width: auto;
+  }
+
+  h1.rareShoeName {
+    margin: 3px;
+    font-size: 15px;
+  }
+
+  div.line {
+    height: 1px;
+  }
+
+  h2.rareSpecifications {
+    margin: 2px;
+    font-size: 12px;
+  }
+
+  select#rareProductSize,
+  select#rareProductColor {
+    width: 80px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  input.btn {
+    width: 100%;
+    margin: 5px 0 2px 0px;
+    height: 25px;
+  }
+
+  div.rareBuyNowContainer {
+    height: 120px;
+    padding: 5px;
+    margin: 10px;
+    width: 90%;
+  }
+
+  p.rarePrize {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  p.rareDelivery {
+    margin: 2px 0;
+    font-size: 12px;
+  }
+
+  p.rareStockCount {
+    font-size: 9px;
+    margin: 0;
+  }
+
+  div.reviewHeadContainer {
+    padding: 2px 10px;
+  }
+
+  div.reviewContainer {
+    padding: 2px;
+    margin: 5px 0;
+  }
+
+  h1.reviewHead {
+    font-size: 13px;
+  }
+
+  h2.customerName {
+    font-size: 12px;
+    margin: 5px;
+    font-weight: 700;
+  }
+
+  p.review {
+    font-size: 10px;
+  }
+
+  p.checkThis,
+  p.aboutUs,
+  p.contactUs {
+    color: white;
+    font-size: 7px;
+    margin-bottom: 7px;
+  }
+
+  img.socialLogoImg {
+    width: 15px;
+    margin-right: 4px;
+  }
+
+  p.ourstory,
+  p.checkThisPara {
+    font-size: 6px;
+    margin-bottom: 2px;
+  }
+
+  div.rareFooterContainer {
+    height: auto;
+    padding: 3px;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 769px) {
+  li.onMobileScreen {
+    display: none;
+  }
+
+  svg.menuButton {
+    display: block;
+    margin: 7px 40px;
+  }
+
+  img.rareFootLogo {
+    height: 60px;
+    bottom: 10px;
+  }
+
+  img.rareProfilePic {
+    /* height: 40px;
+    width: 40px;
+    right: 5px;
+    bottom: 3px; */
+    display: none;
+  }
+
+  p.productName {
+    font-size: 12px;
+  }
+  p.productRating {
+    font-size: 8px;
+  }
+
+  p.actualPrice,
+  p.productPrice {
+    font-size: 7px;
+    margin-top: -5px;
+  }
+
+  span.fa-size {
+    font-size: 6px;
+    position: relative;
+    bottom: 9px;
+  }
+  p.aboutUs,
+  p.checkThis,
+  p.contactUs {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  img.socialLogoImg {
+    width: 25px;
+    margin-right: 6px;
+  }
+
+  p.ourstory,
+  p.checkThisPara {
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+  div.rareFooterContainer {
+    height: 23vh;
+  }
+
+  div.productDetailsContainer {
+    height: 250px;
+  }
+
+  h1.rareShoeName {
+    margin: 3px;
+    font-size: 20px;
+  }
+
+  h2.rareSpecifications {
+    margin: 2px;
+    font-size: 17px;
+  }
+
+  select#rareProductSize,
+  select#rareProductColor {
+    width: 150px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  input.btn {
+    width: 80%;
+    margin: 5px 0 2px 40px;
+    height: 25px;
+  }
+
+  div.rareBuyNowContainer {
+    height: 135px;
+    padding: 5px;
+    margin: 10px;
+    width: 90%;
+  }
+
+  p.rarePrize {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  p.rareDelivery {
+    margin: 2px 0;
+    font-size: 15px;
+  }
+
+  p.rareStockCount {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  h1.reviewHead {
+    font-size: 23px;
+  }
+
+  h2.customerName {
+    font-size: 15px;
+  }
+
+  p.review {
+    font-size: 13px;
+  }
+
+  div.rareFooterContainer {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  p.productName {
+    font-size: 13px;
+  }
+
+  p.productRating {
+    font-size: 10px;
+  }
+
+  p.actualPrice,
+  p.productPrice {
+    font-size: 8px;
+  }
+
+  p.aboutUs,
+  p.checkThis,
+  p.contactUs {
+    color: white;
+    font-size: 20px;
+  }
+  img.socialLogoImg {
+    width: 30px;
+    margin-right: 8px;
+  }
+
+  p.ourstory,
+  p.checkThisPara {
+    font-size: 12px;
+  }
+
+  div.productDetailsContainer {
+    height: 400px;
+  }
+
+  h1.rareShoeName {
+    margin: 5px;
+    font-size: 23px;
+  }
+
+  h2.rareSpecifications {
+    margin: 5px;
+    font-size: 19px;
+  }
+
+  select#rareProductSize,
+  select#rareProductColor {
+    width: 150px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  div.rareFooterContainer {
+    height: auto;
+  }
+
+  p.aboutUs,
+  p.checkThis,
+  p.contactUs {
+    color: white;
+    font-size: 20px;
+  }
+  img.socialLogoImg {
+    width: 30px;
+    margin-right: 8px;
+  }
+
+  p.ourstory,
+  p.checkThisPara {
+    font-size: 12px;
+  }
+}
