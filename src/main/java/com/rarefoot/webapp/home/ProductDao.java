@@ -6,8 +6,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
-
 import com.rarefoot.webapp.login.LoginDto;
 
 public class ProductDao {
@@ -17,7 +15,6 @@ public class ProductDao {
 	{
 		Configuration con = new Configuration().configure()
 				.addAnnotatedClass(ProductDto.class)
-				.addAnnotatedClass(WishListDto.class)
 				.addAnnotatedClass(LoginDto.class); 
 		sf = con.buildSessionFactory();
 		session = sf.openSession();
@@ -58,19 +55,5 @@ public class ProductDao {
 			return "";
 		}
 			return dto.getBrand();
-	}
-
-	public void saveWishList(WishListDto dto) {
-		session = sf.openSession();
-		tx = session.beginTransaction();
-		session.persist(dto);
-		tx.commit();
-		session.close();
-	}
-	
-	public List<WishListDto> getWishList() {
-		session = sf.openSession();
-		List<WishListDto> all = session.createQuery("from WishListDto",WishListDto.class).list();
-		return all;
 	}
 }
